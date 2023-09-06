@@ -1,15 +1,12 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import HomePage from "./pages/HomePage";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <Button onClick={() => setCount((count) => count + 1)}>
-        count = {count}
-      </Button>
-    </>
+    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+      <HomePage />
+    </ThemeProvider>
   );
 }
 
