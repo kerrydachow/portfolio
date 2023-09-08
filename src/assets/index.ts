@@ -9,8 +9,9 @@ import python from "./technologies/python.png";
 import react from "./technologies/react.png";
 import sql from "./technologies/sql.png";
 import typescript from "./technologies/typescript.png";
-import mlc from "./mlc.png"
-import paymentsource from "./payment_source.jpeg"
+import linux from "./technologies/linux.png";
+import mlc from "./mlc.png";
+import paymentsource from "./payment_source.jpeg";
 
 export default {
   aws,
@@ -24,6 +25,7 @@ export default {
   react,
   sql,
   typescript,
+  linux,
   mlc,
-  paymentsource
+  paymentsource,
 };
