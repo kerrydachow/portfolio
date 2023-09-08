@@ -1,3 +1,5 @@
+import images from "../assets/";
+
 const navLinks: Array<{ id: string; title: string }> = [
   {
     id: "about",
@@ -72,23 +74,36 @@ const skills: Array<{ skill: string; icon: string }> = [
 const expertise: Array<{
   title: string;
   description: string;
-  icons: Array<string>;
+  icons: Array<{ name: string; icon: string }>;
 }> = [
   {
     title: "Software Development",
     description: "Experience in both functional programming and OOP.",
-    icons: ["Java.png", "Python.png", "C.png", "SQL.png"],
+    icons: [
+      { name: "Java", icon: images.java },
+      { name: "Python", icon: images.python },
+      { name: "C", icon: images.c },
+      { name: "SQL", icon: images.sql },
+    ],
   },
   {
     title: "Cloud/DevOps Engineer",
     description: "Experience with AWS, building CI/CD pipelines, and Docker.",
-    icons: ["AWS.png", "Docker.png"],
+    icons: [
+      { name: "AWS", icon: images.aws },
+      { name: "Docker", icon: images.docker },
+    ],
   },
   {
     title: "Full Stack Engineer",
     description:
       "Experience in developing web applications from start to finish.",
-    icons: ["JavaScript.png", "TypeScript.png", "ReactJS.png", "MongoDB.png"],
+    icons: [
+      { name: "JavaScript", icon: images.javascript },
+      { name: "TypeScript", icon: images.typescript },
+      { name: "React", icon: images.react },
+      { name: "MongoDB", icon: images.mongodb },
+    ],
   },
 ];
 
@@ -103,21 +118,21 @@ const experiences: Array<{
   {
     title: "Software Developer",
     company_name: "PaymentSource",
-    icon: "payment_source.jpeg",
+    icon: images.paymentsource,
     iconBg: "#383E56",
     date: "Apr 2022 - May 2022",
     points: [
       "Engineered a web application that seamlessly transforms existing JSON data within the database into an editable web form and subsequently persisted the modified data back to the database",
       "Attained 100% consistency in data modification without unintended side-effects",
       "Conducted unit tests on code, and documented the process to enhance integration with legacy software",
-      "Technologies: ASP.NET, Visual Basic, JavaScript, HTML, CSS, GitHub, AWS DynamoDB, jQuery, Bootstrap 4"
+      "Technologies: ASP.NET, Visual Basic, JavaScript, HTML, CSS, GitHub, AWS DynamoDB, jQuery, Bootstrap 4",
     ],
   },
   {
     title: "Full Stack Developer",
     company_name: "MyLivingCity",
-    icon: "mlc2.jpeg",
-    iconBg: "#E6DEDD",
+    icon: images.mlc,
+    iconBg: "#383E56",
     date: "Sep 2022 - Dec 2022",
     points: [
       "Implemented moderation features for user and post management",
@@ -126,7 +141,7 @@ const experiences: Array<{
       "Reviewed, documented, and automated testing for newly implemented features",
       "TypeScript, PostgreSQL, ReactJS, Node.js, Prisma, Bootstrap, GitHub, AWS Amplify",
     ],
-  }
+  },
 ];
 
 export { navLinks, infoLinks, skills, expertise, experiences };
