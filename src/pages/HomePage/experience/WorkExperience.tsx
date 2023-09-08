@@ -5,18 +5,19 @@ import { motion } from "framer-motion";
 import { textVariant } from "../../../utils/motion";
 import { experiences } from "../../../constants";
 import ExperienceCard from "./ExperienceCard";
-import { useTheme } from "../../../components/ThemeProvider";
 
 const WorkExperience = () => {
-  const theme = useTheme();
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className="font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
+        <p className="text-center sm:text-[18px] text-[14px] uppercase tracking-wider">
+          my industry experience
+        </p>
+        <h2 className="text-center font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
           Work Experience
         </h2>
       </motion.div>
-      <div className="mt-20 flex flex-col">
+      <div className="mt-5 flex flex-col">
         <VerticalTimeline lineColor="rgb(148 163 184)" className="">
           {experiences.map((experience, index) => (
             <ExperienceCard key={`experience-${index}`} {...experience} />
