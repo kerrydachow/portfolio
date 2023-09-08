@@ -7,7 +7,7 @@ import { Button } from "../ui/button";
 const Navbar = () => {
   return (
     <>
-      <div className="flex-col md:flex">
+      <nav className="z-40 bg-white dark:bg-slate-950 fixed container flex-col md:flex">
         <div className="border-b">
           <div className="flex h-16 items-center px-4">
             <MainContent />
@@ -39,7 +39,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>
+      </nav>
     </>
   );
 };

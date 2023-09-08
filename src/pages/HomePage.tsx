@@ -5,7 +5,7 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <div className="container">
+    <div className="z-50 container">
       <Navbar />
       <AboutSection />
       <WorkExperience />

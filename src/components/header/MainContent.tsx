@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
-import logo from "../../assets/logo.png";
+import logoDarkMode from "../../assets/logo-white.png";
+import logoLightMode from "../../assets/logo.png";
 import { navLinks } from "@/constants/index.js";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "../ui/sheet";
 import { Menu } from "lucide-react";
@@ -13,7 +14,7 @@ const MainContent = () => {
       <div className="flex">
         <Sheet>
           <SheetTrigger>
-            <Menu className="h-6 w-6 sm:hidden" />
+            <Menu className="h-6 w-6 md:hidden" />
           </SheetTrigger>
           <SheetContent side="left" className="w-[300px] sm:w-[400px]">
             <ul className="flex flex-col gap-5">
@@ -46,13 +47,24 @@ const MainContent = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-7 h-7 object-contain" />
-          <p className="pl-1 text-muted-foreground truncate">Kerry Chow</p>
+          <div>
+            <img
+              src={logoDarkMode}
+              alt={"logo-white"}
+              className="w-7 h-7 object-contain absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
+            />
+            <img
+              src={logoLightMode}
+              alt={"logo-dark"}
+              className="w-7 h-7 object-contain rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
+            />
+          </div>
+          <p className="pl-1  truncate">Kerry Chow</p>
         </Button>
       </div>
 
       {/* Navigation Redirects */}
-      <ul className="list-none hidden sm:flex gap-10 px-10">
+      <ul className="list-none hidden md:flex gap-10 px-10">
         {navLinks.map((link) => (
           <li
             key={link.id}
