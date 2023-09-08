@@ -1,7 +1,6 @@
 import { SectionWrapper } from "@/hoc";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import "../../styles/timeline.css"
 import { motion } from "framer-motion";
 import { textVariant } from "../../utils/motion";
 import { experiences } from "../../constants";
