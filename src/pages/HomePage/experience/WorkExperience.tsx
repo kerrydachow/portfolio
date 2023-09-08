@@ -10,10 +10,10 @@ const WorkExperience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className="text-center sm:text-[18px] text-[14px] uppercase tracking-wider">
+        <p className="min-[1170px]:text-center sm:text-[18px] text-[14px] uppercase tracking-wider">
           my industry experience
         </p>
-        <h2 className="text-center font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
+        <h2 className="min-[1170px]:text-center font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
           Work Experience
         </h2>
       </motion.div>
