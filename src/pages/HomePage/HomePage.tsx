@@ -1,5 +1,5 @@
-import AboutSection from "@/components/about/AboutSection";
-import WorkExperience from "@/components/experience/WorkExperience";
+import AboutSection from "@/pages/HomePage/about/AboutSection";
+import WorkExperience from "@/pages/HomePage/experience/WorkExperience";
 import Navbar from "@/components/header/Navbar";
 import React from "react";
 

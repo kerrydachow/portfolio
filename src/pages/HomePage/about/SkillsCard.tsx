@@ -4,7 +4,7 @@ import {
   CardTitle,
   CardDescription,
   CardContent,
-} from "../ui/card";
+} from "../../../components/ui/card";
 import {
   Tooltip,
   TooltipTrigger,
@@ -37,7 +37,7 @@ const SkillsCard = ({ index, title, description, icons }: SkillsCardProps) => {
               </div>
               <div className="relative flex justify-center text-xs uppercase">
                 <span className="bg-background px-2 text-muted-foreground">
-                  Technologies 
+                  Technologies
                 </span>
               </div>
             </div>

@@ -2,10 +2,10 @@ import { SectionWrapper } from "@/hoc";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { motion } from "framer-motion";
-import { textVariant } from "../../utils/motion";
-import { experiences } from "../../constants";
+import { textVariant } from "../../../utils/motion";
+import { experiences } from "../../../constants";
 import ExperienceCard from "./ExperienceCard";
-import { useTheme } from "../ThemeProvider";
+import { useTheme } from "../../../components/ThemeProvider";
 
 const WorkExperience = () => {
   const theme = useTheme();
@@ -17,11 +17,7 @@ const WorkExperience = () => {
         </h2>
       </motion.div>
       <div className="mt-20 flex flex-col">
-        <VerticalTimeline
-          lineColor="rgb(148 163 184)"
-          
-          className=""
-        >
+        <VerticalTimeline lineColor="rgb(148 163 184)" className="">
           {experiences.map((experience, index) => (
             <ExperienceCard key={`experience-${index}`} {...experience} />
           ))}

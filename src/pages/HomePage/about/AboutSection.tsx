@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../../utils/motion";
+import { fadeIn, textVariant } from "../../../utils/motion";
 import { expertise } from "@/constants";
 import SkillsCard from "./SkillsCard";
 import { SectionWrapper } from "@/hoc";
@@ -12,8 +12,9 @@ const AboutSection = () => {
         <p className="sm:text-[18px] text-[14px] uppercase tracking-wider">
           Introduction
         </p>
-        <h2 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]"
-        >About Me</h2>
+        <h2 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
+          About Me
+        </h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
@@ -31,11 +32,7 @@ const AboutSection = () => {
       </motion.p>
       <div className="mt-20 grid lg:flex gap-5">
         {expertise.map((skill, index) => (
-          <SkillsCard
-            key={skill.title}
-            index={index}
-            {...skill}
-          ></SkillsCard>
+          <SkillsCard key={skill.title} index={index} {...skill}></SkillsCard>
         ))}
       </div>
     </>
