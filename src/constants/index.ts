@@ -92,6 +92,7 @@ const expertise: Array<{
     icons: [
       { name: "AWS", icon: images.aws },
       { name: "Docker", icon: images.docker },
+      { name: "Linux", icon: images.linux },
     ],
   },
   {

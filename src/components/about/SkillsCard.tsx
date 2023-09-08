@@ -30,25 +30,37 @@ const SkillsCard = ({ index, title, description, icons }: SkillsCardProps) => {
           <CardDescription>{description}</CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="flex">
-            {icons.map((icon) => (
-              <TooltipProvider key={icon.name}>
-                <Tooltip delayDuration={100}>
-                  <TooltipTrigger>
-                    <div className="p-1">
-                      <img
-                        className="object-contain h-10 w-10 hover:scale-125"
-                        src={`${icon.icon}`}
-                        alt={icon.name}
-                      />
-                    </div>
-                  </TooltipTrigger>
-                  <TooltipContent side={"bottom"}>
-                    <p>{icon.name}</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-            ))}
+          <div className="grid">
+            <div className="relative">
+              <div className="absolute inset-0 flex items-center">
+                <span className="w-full border-t" />
+              </div>
+              <div className="relative flex justify-center text-xs uppercase">
+                <span className="bg-background px-2 text-muted-foreground">
+                  Technologies 
+                </span>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              {icons.map((icon) => (
+                <TooltipProvider key={icon.name}>
+                  <Tooltip delayDuration={100}>
+                    <TooltipTrigger>
+                      <div className="p-2 mt-5">
+                        <img
+                          className="object-contain h-10 w-10 hover:scale-125"
+                          src={`${icon.icon}`}
+                          alt={icon.name}
+                        />
+                      </div>
+                    </TooltipTrigger>
+                    <TooltipContent side={"bottom"}>
+                      <p>{icon.name}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              ))}
+            </div>
           </div>
         </CardContent>
       </Card>
