@@ -145,4 +145,89 @@ const experiences: Array<{
   },
 ];
 
-export { navLinks, infoLinks, skills, expertise, experiences };
+const projects: Array<{
+  title: string;
+  description: string;
+  longDescription: string;
+  link: string;
+  techStack: Array<{ name: string; color: string }>;
+  updated: string;
+  images: Array<{ src: string, alt: string }>;
+}> = [
+  {
+    title: "Social Media Application",
+    description: "Social Media Application built with the MERN stack.",
+    longDescription:
+      "This project is a simple Social Media application with user posts, post interactions, and user interactions. This project uses the MERN stack along with Redux and Material UI. Link: socialio-z0in.onrender.com",
+    link: "https://github.com/kerrydachow/social-media-mern",
+    techStack: [
+      {
+        name: "MongoDB",
+        color: "#4DB33D",
+      },
+      {
+        name: "Express.js",
+        color: "#F0DB4F",
+      },
+      {
+        name: "ReactJS",
+        color: "#61DBFB",
+      },
+      {
+        name: "Node.js",
+        color: "#68A053",
+      },
+    ],
+    updated: "...",
+    images: [
+      {
+        src: images.socialio1,
+        alt: "socialio1"
+      },
+    ],
+  },
+  {
+    title: "AWS E-commerce Platform",
+    description: "E-commerce web application built with AWS.",
+    longDescription:
+      "This project entails the development of a fully serverless e-commerce platform leveraging AWS microservices.\
+      With an emphasis on scalability and efficiency, the system optimally handles user requests and data storage.\n\
+      Pair programming was utilized to increase productivity as the project has a start-finish timeline of 2 weeks.",
+    link: "https://github.com/kerrydachow/aws_serverless_ecommerce",
+    techStack: [
+      {
+        name: "AWS",
+        color: "#FF9900",
+      },
+      {
+        name: "ReactJS",
+        color: "#61DBFB",
+      },
+      {
+        name: "MySQL",
+        color: "#f29111",
+      },
+    ],
+    updated: "...",
+    images: [
+      {
+        src: images.sss1,
+        alt: "sss1"
+      },
+      {
+        src: images.sss2,
+        alt: "sss2"
+      },
+      {
+        src: images.sss3,
+        alt: "sss3"
+      },
+      {
+        src: images.sss4,
+        alt: "sss4"
+      },
+    ],
+  },
+];
+
+export { navLinks, infoLinks, skills, expertise, experiences, projects };
