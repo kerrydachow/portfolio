@@ -10,8 +10,20 @@ import react from "./technologies/react.png";
 import sql from "./technologies/sql.png";
 import typescript from "./technologies/typescript.png";
 import linux from "./technologies/linux.png";
+
+// Work Logos
 import mlc from "./mlc.png";
 import paymentsource from "./payment_source.jpeg";
+
+// Project Pictures
+import sss1 from "./projects/sss-1.png"
+import sss2 from "./projects/sss-2.png"
+import sss3 from "./projects/sss-3.png"
+import sss4 from "./projects/sss-4.png"
+
+
+import socialio1 from "./projects/socialio-1.png"
+
 
 export default {
   aws,
@@ -28,4 +40,9 @@ export default {
   linux,
   mlc,
   paymentsource,
+  sss1,
+  sss2,
+  sss3,
+  sss4,
+  socialio1
 };
