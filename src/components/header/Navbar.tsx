@@ -7,39 +7,39 @@ import { Button } from "../ui/button";
 const Navbar = () => {
   return (
     <>
-      <nav className="z-40 bg-white dark:bg-slate-950 fixed container flex-col md:flex">
-        <div className="border-b">
-          <div className="flex h-16 items-center px-4">
-            <MainContent />
-            <div className="ml-auto flex items-center">
-              {/* Github */}
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={() => {
-                  window.open(infoLinks.github);
-                }}
-              >
-                <Github className="h-[1.2rem] w-[1.2rem] transition-all" />
-              </Button>
+        <nav className="z-40 bg-white dark:bg-slate-950 sticky top-0 ">
+          <div className="border-b">
+            <div className="flex h-16 items-center px-4">
+              <MainContent />
+              <div className="ml-auto flex items-center">
+                {/* Github */}
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => {
+                    window.open(infoLinks.github);
+                  }}
+                >
+                  <Github className="h-[1.2rem] w-[1.2rem] transition-all" />
+                </Button>
 
-              {/* LinkedIn */}
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={() => {
-                  window.open(infoLinks.linkedin);
-                }}
-              >
-                <Linkedin className="h-[1.2rem] w-[1.2rem] transition-all" />
-              </Button>
+                {/* LinkedIn */}
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => {
+                    window.open(infoLinks.linkedin);
+                  }}
+                >
+                  <Linkedin className="h-[1.2rem] w-[1.2rem] transition-all" />
+                </Button>
 
-              {/* Toggle Dark/Light Mode */}
-              <ModeToggle />
+                {/* Toggle Dark/Light Mode */}
+                <ModeToggle />
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
     </>
   );
 };
