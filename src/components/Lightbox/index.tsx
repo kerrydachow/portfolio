@@ -1,6 +1,7 @@
 import Lightbox, { ImagesListType } from "react-spring-lightbox";
 import ArrowButton from "./Arrow";
 import Header from "./Header";
+import styled from "styled-components";
 
 type IStyledLightboxProps = {
   images: ImagesListType;
@@ -25,7 +26,7 @@ const StyledLightbox = ({
     setCurrentIndex(currentImageIndex + 1);
 
   return (
-    <Lightbox
+    <MyLightbox
       isOpen={isOpen}
       onPrev={gotoPrevious}
       onNext={gotoNext}
@@ -34,9 +35,27 @@ const StyledLightbox = ({
       currentIndex={currentImageIndex}
       className="backdrop-blur"
       singleClickToZoom
-      renderPrevButton={() => (<ArrowButton position={"left"} onClick={gotoPrevious} disabled={currentImageIndex <= 0}/>)}
-      renderNextButton={() => (<ArrowButton position={"right"} onClick={gotoNext} disabled={currentImageIndex === images.length - 1}/>)}
-      renderHeader={()=> (<Header images={images} currentIndex={currentImageIndex} onClose={onClose}/>)}
+      renderPrevButton={() => (
+        <ArrowButton
+          position={"left"}
+          onClick={gotoPrevious}
+          disabled={currentImageIndex <= 0}
+        />
+      )}
+      renderNextButton={() => (
+        <ArrowButton
+          position={"right"}
+          onClick={gotoNext}
+          disabled={currentImageIndex === images.length - 1}
+        />
+      )}
+      renderHeader={() => (
+        <Header
+          images={images}
+          currentIndex={currentImageIndex}
+          onClose={onClose}
+        />
+      )}
       /* react-spring config for open/close animation */
       pageTransitionConfig={{
         from: { transform: "scale(0.75)", opacity: 0 },
@@ -47,5 +66,23 @@ const StyledLightbox = ({
     />
   );
 };
-
 export default StyledLightbox;
+
+/* 
+  Try to select the component
+  rather than a nested selection.
+*/
+const MyLightbox = styled(Lightbox)`
+  > div > div > div > div {
+    @media (min-width: 1400px) {
+      max-width: 1400px;
+    }
+    @media (max-width: 1400px) {
+      width: 80%;
+    }
+  }
+  > div > div > div > div > div > div > img {
+    cursor: zoom-in;
+    cursor: -webkit-zoom-in;
+  }
+`;
