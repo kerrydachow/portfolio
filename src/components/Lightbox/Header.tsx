@@ -16,10 +16,6 @@ const LightboxHeader = ({
 }: LightboxHeaderProps) => {
   return (
     <div className="m-10 flex items-center justify-between">
-      <div className="h-10 w-10"/>
-      <div className="bg-slate-200/50 dark:bg-slate-700/50 tracking-wider px-2 py-1 rounded-lg">
-        <p className="text-md">{currentIndex + 1} / {images.length}</p>
-      </div>
       <Button
         variant="secondary"
         size="icon"
@@ -28,6 +24,13 @@ const LightboxHeader = ({
       >
         <Cross1Icon className="group-hover:rotate-90 group-hover:stroke-current transition duration-500" />
       </Button>
+      <div className="bg-slate-200/50 dark:bg-slate-700/50 tracking-wider px-2 py-1 rounded-lg">
+        <p className="text-md">
+          {currentIndex + 1} / {images.length}
+        </p>
+      </div>
+
+      <div className="h-10 w-10" />
     </div>
   );
 };
