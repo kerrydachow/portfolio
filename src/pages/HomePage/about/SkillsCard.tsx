@@ -41,12 +41,12 @@ const SkillsCard = ({ index, title, description, icons }: SkillsCardProps) => {
                 </span>
               </div>
             </div>
-            <div className="flex justify-center">
+            <div className="mt-5 flex justify-center">
               {icons.map((icon) => (
                 <TooltipProvider key={icon.name}>
                   <Tooltip delayDuration={100}>
                     <TooltipTrigger>
-                      <div className="p-2 mt-5">
+                      <div className="mx-2">
                         <img
                           className="object-contain h-10 w-10 hover:scale-125 transition duration-500"
                           src={`${icon.icon}`}
