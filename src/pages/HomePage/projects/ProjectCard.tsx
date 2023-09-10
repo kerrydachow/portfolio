@@ -103,10 +103,9 @@ const ProjectCard = (project: ProjectCardProps) => {
           <div className="flex space-x-4 text-sm text-muted-foreground">
             <div className="flex flex-wrap items-center">
               {project.techStack.map((tech, index) => (
-                <div className="flex items-center mr-5">
+                <div key={`tech-${index}`} className="flex items-center mr-5">
                   <CircleIcon
                     color={tech.color}
-                    key={`tech-${index}`}
                     className={`mr-1 h-3 w-3 pr`}
                   />
                   {tech.name}

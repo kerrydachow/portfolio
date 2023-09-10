@@ -19,9 +19,8 @@ const MainContent = () => {
           <SheetContent side="left" className="w-[300px] sm:w-[400px]">
             <ul className="flex flex-col gap-5">
               {navLinks.map((link) => (
-                <SheetClose asChild>
+                <SheetClose key={link.id} asChild>
                   <li
-                    key={link.id}
                     className={`${
                       active === link.title ? "" : "text-muted-foreground"
                     } text-sm font-medium  transition-colors hover:text-primary`}
