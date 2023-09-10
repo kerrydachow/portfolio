@@ -37,18 +37,15 @@ const ExperienceCard = (experience: ExperienceCardProps) => {
       }
     >
       <div>
-        <h3 className="text-[24px] font-bold">{experience.title}</h3>
-        <p className="text-[16px] font-semibold" style={{ margin: 0 }}>
+        <h3 className="text-lg font-bold">{experience.title}</h3>
+        <p className="text-base font-semibold" style={{ margin: 0 }}>
           {experience.company_name}
         </p>
       </div>
 
-      <ul className="mt-5 list-disc ml-5 space-y-2">
+      <ul className="mt-4 list-disc ml-5 space-y-2">
         {experience.points.map((point, index) => (
-          <li
-            key={`experience-point-${index}`}
-            className="text-[14px] pl-1 tracking-wider"
-          >
+          <li key={`experience-point-${index}`} className="text-sm pl-1">
             {point}
           </li>
         ))}
