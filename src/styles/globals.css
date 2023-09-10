@@ -56,3 +56,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .tooltip {
+    @apply mt-1 gap-1 flex flex-row items-center bg-slate-900 dark:bg-white rounded p-0.5
+  }
+  .tooltip-text {
+    @apply text-white dark:text-black text-xs
+  }
+}
