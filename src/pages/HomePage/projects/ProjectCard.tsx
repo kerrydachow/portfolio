@@ -2,6 +2,7 @@ import { useState } from "react";
 import {
   ChevronDownIcon,
   CircleIcon,
+  GitHubLogoIcon,
   ExternalLinkIcon,
 } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
@@ -13,15 +14,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 import { Dialog } from "@radix-ui/react-dialog";
 import {
@@ -31,6 +23,13 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+
+import {
+  Tooltip,
+  TooltipTrigger,
+  TooltipContent,
+  TooltipProvider,
+} from "@radix-ui/react-tooltip";
 
 import Lightbox from "@/components/Lightbox";
 
@@ -52,45 +51,39 @@ const ProjectCard = (project: ProjectCardProps) => {
   return (
     <>
       {/* Display details in a Card */}
-      <Card className="group">
+      <Card>
         <CardHeader className="grid grid-cols-[1fr_50px] items-start gap-4 space-y-0">
           <div className="space-y-1 ">
             <CardTitle>{project.title}</CardTitle>
             <CardDescription>{project.description}</CardDescription>
           </div>
           <div className="flex ml-auto items-center space-x-1 rounded-md text-secondary-foreground">
-            {/* Dropdown Menu */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="secondary" className="px-2 shadow-none z-30">
-                  <ChevronDownIcon className="h-4 w-4 text-secondary-foreground" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent
-                align="end"
-                alignOffset={-5}
-                className="w-[160px]"
-                forceMount
-              >
-                {/* Dropdown Item to display dialog of additional info */}
-                <DropdownMenuItem onClick={() => setIsDialogOpen(true)}>
-                  More Details
-                </DropdownMenuItem>
-                {/* Dropdown Item to open repository */}
-                <a href={project.link} target="_blank">
-                  <DropdownMenuItem>
-                    <div className="flex items-center space-x-3 ">
-                      <p>View Repository</p>
-                      <ExternalLinkIcon className="h-4 w-4 text-secondary-foreground" />
-                    </div>
-                  </DropdownMenuItem>
-                </a>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <TooltipProvider>
+              <Tooltip delayDuration={100}>
+                <TooltipTrigger>
+                  <a href={project.link} target="_blank">
+                    <Button
+                      variant="secondary"
+                      className="px-2 shadow-none z-30"
+                    >
+                      <GitHubLogoIcon className="h-4 w-4 text-secondary-foreground" />
+                    </Button>
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent side={"bottom"}>
+                  <div className="tooltip">
+                    <p className=" tooltip-text">
+                      View Repository
+                    </p>
+                    <ExternalLinkIcon className="text-white dark:text-black"/>
+                  </div>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           </div>
         </CardHeader>
         <CardContent onClick={() => setIsLightboxOpen(true)}>
-          <div className="relative group-hover cursor-pointer ">
+          <div className="relative group cursor-pointer ">
             <div className="w-full h-[300px] rounded-2xl overflow-hidden ">
               <img
                 src={project.images[0].src}
