@@ -48,14 +48,14 @@ const SkillsCard = ({ index, title, description, icons }: SkillsCardProps) => {
                     <TooltipTrigger>
                       <div className="p-2 mt-5">
                         <img
-                          className="object-contain h-10 w-10 hover:scale-125"
+                          className="object-contain h-10 w-10 hover:scale-125 transition duration-500"
                           src={`${icon.icon}`}
                           alt={icon.name}
                         />
                       </div>
                     </TooltipTrigger>
-                    <TooltipContent side={"bottom"}>
-                      <p>{icon.name}</p>
+                    <TooltipContent className="tooltip"side={"bottom"}>
+                      <p className="tooltip-text">{icon.name}</p>
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>
