@@ -32,7 +32,7 @@ const Projects = () => {
           including versions of Lorem Ipsum.
         </motion.p>
       </div>
-      <div className="grid lg:grid-cols-2 md:grid-cols-1: gap-10">
+      <div className="mt-10 grid lg:grid-cols-2 md:grid-cols-1: gap-10">
         {projects.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}
