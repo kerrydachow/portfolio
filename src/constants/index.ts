@@ -10,12 +10,12 @@ const navLinks: Array<{ id: string; title: string }> = [
     title: "Work",
   },
   {
-    id: "contact",
-    title: "Contact",
-  },
-  {
     id: "projects",
     title: "Projects",
+  },
+  {
+    id: "contact",
+    title: "Contact",
   },
 ];
 
@@ -152,7 +152,7 @@ const projects: Array<{
   link: string;
   techStack: Array<{ name: string; color: string }>;
   updated: string;
-  images: Array<{ src: string, alt: string }>;
+  images: Array<{ src: string; alt: string }>;
 }> = [
   {
     title: "Social Media Application",
@@ -182,7 +182,7 @@ const projects: Array<{
     images: [
       {
         src: images.socialio1,
-        alt: "socialio1"
+        alt: "socialio1",
       },
     ],
   },
@@ -207,24 +207,28 @@ const projects: Array<{
         name: "MySQL",
         color: "#f29111",
       },
+      {
+        name: "Node.js",
+        color: "#68A053",
+      }
     ],
     updated: "...",
     images: [
       {
         src: images.sss1,
-        alt: "sss1"
+        alt: "sss1",
       },
       {
         src: images.sss2,
-        alt: "sss2"
+        alt: "sss2",
       },
       {
         src: images.sss3,
-        alt: "sss3"
+        alt: "sss3",
       },
       {
         src: images.sss4,
-        alt: "sss4"
+        alt: "sss4",
       },
     ],
   },
