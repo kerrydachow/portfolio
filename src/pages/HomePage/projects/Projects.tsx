@@ -17,7 +17,7 @@ const Projects = () => {
         </h2>
       </motion.div>
       <div className="w-full flex">
-        <motion.p
+        {/* <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-[17px] max-w-3xl leading-[30px]"
         >
@@ -30,7 +30,7 @@ const Projects = () => {
           the release of Letraset sheets containing Lorem Ipsum passages, and
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
-        </motion.p>
+        </motion.p> */}
       </div>
       <div className="mt-10 grid lg:grid-cols-2 md:grid-cols-1: gap-10">
         {projects.map((project, index) => (
