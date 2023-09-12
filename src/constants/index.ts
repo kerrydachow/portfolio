@@ -184,6 +184,18 @@ const projects: Array<{
         src: images.socialio1,
         alt: "socialio1",
       },
+      {
+        src: images.socialio2,
+        alt: "socialio2",
+      },
+      {
+        src: images.socialio3,
+        alt: "socialio3",
+      },
+      {
+        src: images.socialio4,
+        alt: "socialio4",
+      },
     ],
   },
   {
@@ -210,7 +222,7 @@ const projects: Array<{
       {
         name: "Node.js",
         color: "#68A053",
-      }
+      },
     ],
     updated: "...",
     images: [
@@ -229,6 +241,50 @@ const projects: Array<{
       {
         src: images.sss4,
         alt: "sss4",
+      },
+    ],
+  },
+  {
+    title: "Text-Based Adventure Game",
+    description: "Text-Based Adventure Game developed and tested in Python.",
+    longDescription:
+      "Text-Based Adventure that includes combat, 25x25 grid, level system, monsters, and a final boss.",
+    link: "https://github.com/kerrydachow/text-based-adv",
+    techStack: [
+      {
+        name: "Python",
+        color: "#4B8BBE",
+      },
+    ],
+    updated: "...",
+    images: [
+      {
+        src: images.ptb1,
+        alt: "text-based-adv-1",
+      },
+      {
+        src: images.ptb2,
+        alt: "text-based-adv-2",
+      },
+      {
+        src: images.ptb3,
+        alt: "text-based-adv-3",
+      },
+      {
+        src: images.ptb4,
+        alt: "text-based-adv-4",
+      },
+      {
+        src: images.ptb5,
+        alt: "text-based-adv-5",
+      },
+      {
+        src: images.ptb6,
+        alt: "text-based-adv-6",
+      },
+      {
+        src: images.ptb7,
+        alt: "text-based-adv-7",
       },
     ],
   },
