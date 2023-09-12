@@ -9,7 +9,7 @@ const Navbar = () => {
     <>
         <nav className="z-40 bg-white dark:bg-slate-950 sticky top-0 ">
           <div className="border-b">
-            <div className="flex h-16 items-center px-4">
+            <div className="container flex h-16 items-center px-4">
               <MainContent />
               <div className="ml-auto flex items-center">
                 {/* Github */}
