@@ -21,8 +21,15 @@ import sss2 from "./projects/sss-2.png"
 import sss3 from "./projects/sss-3.png"
 import sss4 from "./projects/sss-4.png"
 
+// Me
+import me1 from "./me-1.jpg"
+import me2 from "./me-2.png"
+
 
 import socialio1 from "./projects/socialio-1.png"
+
+// Background
+import bg from "./background.jpg";
 
 
 export default {
@@ -44,5 +51,8 @@ export default {
   sss2,
   sss3,
   sss4,
-  socialio1
+  socialio1,
+  me1,
+  me2,
+  bg
 };
