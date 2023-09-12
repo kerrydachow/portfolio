@@ -12,7 +12,7 @@ const MainContent = () => {
     <>
       {/* Mobile Hamburger */}
       <div className="flex">
-        <Sheet>
+        <Sheet modal={false}>
           <SheetTrigger>
             <Menu className="h-6 w-6 md:hidden" />
           </SheetTrigger>
@@ -20,16 +20,17 @@ const MainContent = () => {
             <ul className="flex flex-col gap-5">
               {navLinks.map((link) => (
                 <SheetClose key={link.id} asChild>
-                  <li
+                  <a
                     className={`${
                       active === link.title ? "" : "text-muted-foreground"
                     } text-sm font-medium  transition-colors hover:text-primary`}
                     onClick={() => {
                       setActive(link.title);
                     }}
+                    href={`#${link.id}`}
                   >
-                    <a href={`#${link.id}`}>{`${link.title}`}</a>
-                  </li>
+                    {`${link.title}`}
+                  </a>
                 </SheetClose>
               ))}
             </ul>
