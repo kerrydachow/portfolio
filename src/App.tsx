@@ -6,7 +6,7 @@ function App() {
     <BrowserRouter>
       <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/portfolio" element={<HomePage />} />
         </Routes>
       </ThemeProvider>
     </BrowserRouter>
