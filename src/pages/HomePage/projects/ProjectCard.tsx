@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { fadeIn, zoomIn } from "@/utils/motion";
 import {
   ChevronDownIcon,
   CircleIcon,
@@ -34,6 +36,7 @@ import {
 import Lightbox from "@/components/Lightbox";
 
 type ProjectCardProps = {
+  index: number
   title: string;
   description: string;
   longDescription: string;
@@ -49,7 +52,7 @@ const ProjectCard = (project: ProjectCardProps) => {
   const [currentImageIndex, setCurrentIndex] = useState(0);
 
   return (
-    <>
+    <motion.div variants={zoomIn(project.index * 0.5, 0.75)}>
       {/* Display details in a Card */}
       <Card>
         <CardHeader className="grid grid-cols-[1fr_50px] items-start gap-4 space-y-0">
@@ -138,7 +141,7 @@ const ProjectCard = (project: ProjectCardProps) => {
         onClose={() => setIsLightboxOpen(false)}
         images={project.images}
       />
-    </>
+    </motion.div>
   );
 };
 

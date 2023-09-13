@@ -35,6 +35,7 @@ const Projects = () => {
       <div className="mt-10 grid lg:grid-cols-2 md:grid-cols-1: gap-10">
         {projects.map((project, index) => (
           <ProjectCard
+            index={index}
             key={`project-${index}`}
             {...project}
           />
