@@ -1,5 +1,4 @@
-import React from "react";
-import { fadeIn, textVariant } from "@/utils/motion";
+import { textVariant } from "@/utils/motion";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "@/hoc";
 import { projects } from "@/constants";

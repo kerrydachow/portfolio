@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { fadeIn, zoomIn } from "@/utils/motion";
+import { zoomIn } from "@/utils/motion";
 import {
   ChevronDownIcon,
   CircleIcon,

@@ -8,16 +8,13 @@ import {
   CardHeader,
   CardTitle,
   CardContent,
-  CardDescription,
   CardFooter,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -57,13 +54,13 @@ const Contact = () => {
       },
       body: JSON.stringify(event),
     })
-      .then((results) => {
+      .then(() => {
         form.reset();
         toast({
           description: "Your message has been sent!",
         });
       })
-      .catch((error) => {
+      .catch(() => {
         toast({
           variant: "destructive",
           title: "Uh oh! Something went wrong.",

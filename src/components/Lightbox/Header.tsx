@@ -1,4 +1,4 @@
-import { Cross1Icon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import { Cross1Icon } from "@radix-ui/react-icons";
 import { ImagesListType } from "react-spring-lightbox";
 import { Button } from "../ui/button";
 

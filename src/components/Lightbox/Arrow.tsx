@@ -1,4 +1,3 @@
-import { animated, useTransition } from "@react-spring/web";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "../ui/button";
 
