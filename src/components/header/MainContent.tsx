@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
 import logoDarkMode from "../../assets/logo-white.png";
-import logoLightMode from "../../assets/logo.png";
+import logoLightMode from "../../assets/logo-black.png";
 import { navLinks } from "@/constants/index.js";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "../ui/sheet";
 import { Menu } from "lucide-react";
@@ -39,28 +39,30 @@ const MainContent = () => {
       </div>
 
       {/* Logo */}
-      <div className="hidden sm:flex">
-        <Button
-          variant="ghost"
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-        >
-          <div>
-            <img
-              src={logoDarkMode}
-              alt={"logo-white"}
-              className="w-7 h-7 object-contain absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
-            />
-            <img
-              src={logoLightMode}
-              alt={"logo-dark"}
-              className="w-7 h-7 object-contain rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
-            />
-          </div>
-          <p className="pl-1  truncate">Kerry Chow</p>
-        </Button>
+      <div className="hidden sm:flex group">
+        <a href="#">
+          <Button
+            variant="ghost"
+            onClick={() => {
+              setActive("");
+              window.scrollTo(0, 0);
+            }}
+          >
+            <div className="group-hover:scale-125 duration-500">
+              <img
+                src={logoDarkMode}
+                alt={"logo-white"}
+                className="w-7 h-7 object-contain absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
+              />
+              <img
+                src={logoLightMode}
+                alt={"logo-dark"}
+                className="w-7 h-7 object-contain rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
+              />
+            </div>
+            <p className="pl-1  truncate">Kerry Chow</p>
+          </Button>
+        </a>
       </div>
 
       {/* Navigation Redirects */}
