@@ -19,9 +19,11 @@ const navLinks: Array<{ id: string; title: string }> = [
   },
 ];
 
-const infoLinks: { github: string; linkedin: string } = {
+const infoLinks: { github: string; linkedin: string; resume: string } = {
   github: "https://github.com/kerrydachow",
   linkedin: "https://www.linkedin.com/in/kerrykchow/",
+  resume:
+    "https://drive.google.com/file/d/1NR1bTkvekzc78ocf9Yp8I6RZcmopLEBW/view",
 };
 
 const skills: Array<{ skill: string; icon: string }> = [
@@ -136,7 +138,7 @@ const experiences: Array<{
     iconBg: "#383E56",
     date: "Sep 2022 - Dec 2022",
     points: [
-      "Implemented moderation features for user and post management",
+      "Implemented administrative content moderation tools for user and post management",
       "Reduced API costs by 94.4% by identifying the cause and implementing caching",
       "Reduced moderation dashboard page load time by 3 seconds through optimizing data filtration",
       "Reviewed, documented, and automated testing for newly implemented features",
