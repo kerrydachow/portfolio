@@ -1,12 +1,15 @@
-import { useState } from "react";
 import HomePage from "./pages/HomePage/HomePage";
 import { ThemeProvider } from "@/components/ThemeProvider";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-      <HomePage />
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
 
