@@ -9,7 +9,10 @@ const AboutSection = () => {
   return (
     <>
       <div className="lg:flex lg:flex-row md:justify-between md:items-center md:h-full gap-16">
-        <motion.div className="text-center lg:text-left lg:basis-1/2" variants={textVariant()}>
+        <motion.div
+          className="text-center lg:text-left lg:basis-1/2"
+          variants={textVariant()}
+        >
           <p className="sm:text-[18px] text-[14px] uppercase tracking-wider">
             Introduction
           </p>
@@ -30,16 +33,15 @@ const AboutSection = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className=" text-[17px] leading-[30px]"
           >
-            I am a Software Developer from Vancouver, B.C, who is a recent
+            I am a Software Developer from Vancouver, B.C., who is a recent
             graduate from British Columbia Institute of Technology's (BCIT)
             Computer Systems Technology program. My coding philosophy centers
             around prioritizing user experience and delivering clean, efficient,
             and scalable solutions. I am always seeking for better ways to
-            design and implement solutions. I am deeply fascinated by the
-            rapidly changing tech landscape, and my pursuit of knowledge does
-            not stem from a mere professional obligation, but from a genuine
-            desire to be of value in an industry that is constantly reshaping
-            itself.
+            design and implement solutions. I am also genuinely fascinated by
+            the fast-evolving tech world and seek knowledge not just out of
+            professional duty, but to truly add value in this ever-changing
+            industry.
           </motion.p>
 
           <br />
@@ -49,8 +51,7 @@ const AboutSection = () => {
             className="text-[17px] leading-[30px]"
           >
             Open-minded and eager for growth, I am actively seeking
-            opportunities to refine my skills and emerge as both a stronger
-            Software Developer and a visionary leader.
+            opportunities to improve as a Software Developer and leader.
           </motion.p>
         </motion.div>
         <motion.div

@@ -34,6 +34,11 @@ import ptb5 from "./projects/python-tba-game-5.png";
 import ptb6 from "./projects/python-tba-game-6.png";
 import ptb7 from "./projects/python-tba-game-7.png";
 
+import lcs1 from "./projects/leetcode-scraper-1.png"
+import lcs2 from "./projects/leetcode-scraper-2.png"
+import lcs3 from "./projects/leetcode-scraper-3.png"
+import lcs4 from "./projects/leetcode-scraper-4.png"
+
 // Me
 import me1 from "./me-1.jpg";
 import me2 from "./me-2.png";
@@ -68,6 +73,10 @@ export default {
   ptb5,
   ptb6,
   ptb7,
+  lcs1,
+  lcs2,
+  lcs3,
+  lcs4,
   me1,
   me2,
 };

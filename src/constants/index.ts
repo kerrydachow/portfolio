@@ -23,55 +23,8 @@ const infoLinks: { github: string; linkedin: string; resume: string } = {
   github: "https://github.com/kerrydachow",
   linkedin: "https://www.linkedin.com/in/kerrykchow/",
   resume:
-    "https://drive.google.com/file/d/1NR1bTkvekzc78ocf9Yp8I6RZcmopLEBW/view",
+    "https://drive.google.com/file/d/102WpBgSQaeKcmCOoYT9bcVVIsz7O7esB/view?usp=sharing",
 };
-
-const skills: Array<{ skill: string; icon: string }> = [
-  {
-    skill: "React JS",
-    icon: "reactjs",
-  },
-  {
-    skill: "Python",
-    icon: "python",
-  },
-  {
-    skill: "Java",
-    icon: "java",
-  },
-  {
-    skill: "TypeScript",
-    icon: "typescript",
-  },
-  {
-    skill: "JavaScript",
-    icon: "javascript",
-  },
-  {
-    skill: "Docker",
-    icon: "docker",
-  },
-  {
-    skill: "SQL",
-    icon: "sql",
-  },
-  {
-    skill: "Node.js",
-    icon: "nodejs",
-  },
-  {
-    skill: "Express.js",
-    icon: "expressjs",
-  },
-  {
-    skill: "MongoDB",
-    icon: "mongodb",
-  },
-  {
-    skill: "AWS",
-    icon: "aws",
-  },
-];
 
 const expertise: Array<{
   title: string;
@@ -80,7 +33,7 @@ const expertise: Array<{
 }> = [
   {
     title: "Software Development",
-    description: "Experience in both functional programming and OOP.",
+    description: "Experience in both procedural and object-oriented programming.",
     icons: [
       { name: "Java", icon: images.java },
       { name: "Python", icon: images.python },
@@ -94,7 +47,7 @@ const expertise: Array<{
     icons: [
       { name: "AWS", icon: images.aws },
       { name: "Docker", icon: images.docker },
-      { name: "Linux", icon: images.linux },
+      { name: "Linux Terminal", icon: images.linux },
     ],
   },
   {
@@ -104,6 +57,7 @@ const expertise: Array<{
     icons: [
       { name: "JavaScript", icon: images.javascript },
       { name: "TypeScript", icon: images.typescript },
+      { name: "Node.js", icon: images.nodejs },
       { name: "React", icon: images.react },
       { name: "MongoDB", icon: images.mongodb },
     ],
@@ -128,7 +82,7 @@ const experiences: Array<{
       "Engineered a web application that seamlessly transforms existing JSON data within the database into an editable web form and subsequently persisted the modified data back to the database",
       "Attained 100% consistency in data modification without unintended side-effects",
       "Conducted unit tests on code, and documented the process to enhance integration with legacy software",
-      "Technologies: ASP.NET, Visual Basic, JavaScript, HTML, CSS, GitHub, AWS DynamoDB, jQuery, Bootstrap 4",
+      "Technologies: ASP.NET, Visual Basic, JavaScript, AWS DynamoDB, jQuery, Bootstrap 4",
     ],
   },
   {
@@ -139,10 +93,11 @@ const experiences: Array<{
     date: "Sep 2022 - Dec 2022",
     points: [
       "Implemented administrative content moderation tools for user and post management",
+      "Designed REST APIs using Prisma and Express.js for seamless interaction with a PostgreSQL database",
       "Reduced API costs by 94.4% by identifying the cause and implementing caching",
       "Reduced moderation dashboard page load time by 3 seconds through optimizing data filtration",
       "Reviewed, documented, and automated testing for newly implemented features",
-      "TypeScript, PostgreSQL, ReactJS, Node.js, Prisma, Bootstrap, GitHub, AWS Amplify",
+      "Technologies: TypeScript, PostgreSQL, ReactJS, Node.js, Prisma, Bootstrap, GitHub, AWS Amplify",
     ],
   },
 ];
@@ -247,6 +202,39 @@ const projects: Array<{
     ],
   },
   {
+    title: "LeetCode Submission Scraper Discord Bot",
+    description:
+      "Automate the task of checking friends' daily LeetCode submissions.",
+    longDescription:
+      "Webscraper Discord Bot to automate and centralize the task of checking my friends' daily LeetCode submissions.",
+    link: "https://github.com/kerrydachow/leetcode-activity-scraper-discord-bot",
+    techStack: [
+      {
+        name: "Python",
+        color: "#4B8BBE",
+      },
+    ],
+    updated: "...",
+    images: [
+      {
+        src: images.lcs1,
+        alt: "leetcode-scraper-1",
+      },
+      {
+        src: images.lcs2,
+        alt: "leetcode-scraper-2",
+      },
+      {
+        src: images.lcs3,
+        alt: "leetcode-scraper-3",
+      },
+      {
+        src: images.lcs4,
+        alt: "leetcode-scraper-4",
+      },
+    ],
+  },
+  {
     title: "Text-Based Adventure Game",
     description: "Text-Based Adventure Game developed and tested in Python.",
     longDescription:
@@ -292,4 +280,4 @@ const projects: Array<{
   },
 ];
 
-export { navLinks, infoLinks, skills, expertise, experiences, projects };
+export { navLinks, infoLinks, expertise, experiences, projects };

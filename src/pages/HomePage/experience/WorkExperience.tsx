@@ -23,14 +23,14 @@ const WorkExperience = () => {
           className="mt-3 text-[17px] text-center max-w-3xl leading-[30px]"
         >
           Thanks to BCIT's Industry Sponsored Student Projects program, I've had
-          the privilege to complete two project practicums. The opportunity to
+          the privilege to complete two practicums. The opportunity to
           work on genuine IT and software development projects directly from
-          industry sponsors was invaluable. Through this program, I was not only
-          able to apply my skills in real-life scenarios but also understand the
-          comprehensive development life-cycle. Working in teams, sometimes
-          individually, under the guidance of our industry sponsors has
-          ingrained in me the confidence, skills, and experience that I can now
-          carry forward into the professional world.
+          industry sponsors was invaluable. In this program, I not only applied
+          my skills to create industry-standard MVPs, but also gained an
+          understanding of the full development life-cycle. Collaborating in
+          teams or sometimes working individually, under the mentorship of
+          industry sponsors, has equipped me with the confidence, skills, and
+          experience I need for the professional world.
         </motion.p>
       </div>
       <div className="mt-5 flex flex-col">
