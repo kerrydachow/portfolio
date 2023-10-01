@@ -23,7 +23,7 @@ const infoLinks: { github: string; linkedin: string; resume: string } = {
   github: "https://github.com/kerrydachow",
   linkedin: "https://www.linkedin.com/in/kerrykchow/",
   resume:
-    "https://drive.google.com/file/d/102WpBgSQaeKcmCOoYT9bcVVIsz7O7esB/view?usp=sharing",
+    "https://drive.google.com/file/d/1iDyzwyB_2zbvuizaruEc691vorZMTn5u/view?usp=sharing",
 };
 
 const expertise: Array<{
@@ -33,10 +33,12 @@ const expertise: Array<{
 }> = [
   {
     title: "Software Development",
-    description: "Experience in both procedural and object-oriented programming.",
+    description:
+      "Experience in both procedural and object-oriented programming.",
     icons: [
       { name: "Java", icon: images.java },
       { name: "Python", icon: images.python },
+      { name: "C++", icon: images.cpp },
       { name: "C", icon: images.c },
       { name: "SQL", icon: images.sql },
     ],
@@ -79,9 +81,9 @@ const experiences: Array<{
     iconBg: "#383E56",
     date: "Apr 2022 - May 2022",
     points: [
-      "Engineered a web application that seamlessly transforms existing JSON data within the database into an editable web form and subsequently persisted the modified data back to the database",
-      "Attained 100% consistency in data modification without unintended side-effects",
-      "Conducted unit tests on code, and documented the process to enhance integration with legacy software",
+      "Championed a UI overhaul prioritizing non-technical users, resulting in a 95% satisfaction rate and a decrease in XML/JSON editing errors by end-users",
+      "Introduced intuitive error messages based on user inputs, reducing user support requests by 75%",
+      "Spearheaded the development of a full-stack web application using ASP.NET and AWS DynamoDB",
       "Technologies: ASP.NET, Visual Basic, JavaScript, AWS DynamoDB, jQuery, Bootstrap 4",
     ],
   },
@@ -92,10 +94,9 @@ const experiences: Array<{
     iconBg: "#383E56",
     date: "Sep 2022 - Dec 2022",
     points: [
-      "Implemented administrative content moderation tools for user and post management",
-      "Designed REST APIs using Prisma and Express.js for seamless interaction with a PostgreSQL database",
       "Reduced API costs by 94.4% by identifying the cause and implementing caching",
       "Reduced moderation dashboard page load time by 3 seconds through optimizing data filtration",
+      "Designed REST APIs using Prisma and Express.js for seamless interaction with a PostgreSQL database",
       "Reviewed, documented, and automated testing for newly implemented features",
       "Technologies: TypeScript, PostgreSQL, ReactJS, Node.js, Prisma, Bootstrap, GitHub, AWS Amplify",
     ],
@@ -152,6 +153,30 @@ const projects: Array<{
       {
         src: images.socialio4,
         alt: "socialio4",
+      },
+      {
+        src: images.socialio5,
+        alt: "socialio5",
+      },
+      {
+        src: images.socialio6,
+        alt: "socialio6",
+      },
+      {
+        src: images.socialio7,
+        alt: "socialio7",
+      },
+      {
+        src: images.socialio8,
+        alt: "socialio8",
+      },
+      {
+        src: images.socialio9,
+        alt: "socialio9",
+      },
+      {
+        src: images.socialio10,
+        alt: "socialio10",
       },
     ],
   },
