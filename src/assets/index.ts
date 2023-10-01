@@ -1,5 +1,6 @@
 import aws from "./technologies/aws.png";
 import c from "./technologies/c.png";
+import cpp from "./technologies/cpp.png";
 import docker from "./technologies/docker.png";
 import java from "./technologies/java.png";
 import javascript from "./technologies/javascript.png";
@@ -25,6 +26,13 @@ import socialio1 from "./projects/socialio-1.png";
 import socialio2 from "./projects/socialio-2.png";
 import socialio3 from "./projects/socialio-3.png";
 import socialio4 from "./projects/socialio-4.png";
+import socialio5 from "./projects/socialio-5.png";
+import socialio6 from "./projects/socialio-6.png";
+import socialio7 from "./projects/socialio-7.png";
+import socialio8 from "./projects/socialio-8.png";
+import socialio9 from "./projects/socialio-9.png";
+import socialio10 from "./projects/socialio-10.png";
+
 
 import ptb1 from "./projects/python-tba-game-1.png";
 import ptb2 from "./projects/python-tba-game-2.png";
@@ -46,6 +54,7 @@ import me2 from "./me-2.png";
 export default {
   aws,
   c,
+  cpp,
   docker,
   java,
   javascript,
@@ -66,6 +75,12 @@ export default {
   socialio2,
   socialio3,
   socialio4,
+  socialio5,
+  socialio6,
+  socialio7,
+  socialio8,
+  socialio9,
+  socialio10,
   ptb1,
   ptb2,
   ptb3,
